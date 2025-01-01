@@ -7,6 +7,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<ITransientService, SomeService>();
 builder.Services.AddScoped<IScopedService, SomeService>();
+builder.Services.AddSingleton<ISingletonService, SomeService>();
 
 var app = builder.Build();
 

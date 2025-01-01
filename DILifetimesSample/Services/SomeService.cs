@@ -21,16 +21,16 @@ namespace DILifetimesSample.Services
 
     public interface ITransientService
     {
-        Guid GetGuid();
+        Guid GetID();
     }
 
     public interface IScopedService
     {
-        Guid GetGuid();
+        Guid GetID();
     }
 
     public interface ISingletonService
     {
-        Guid GetGuid();
+        Guid GetID();
     }
 }

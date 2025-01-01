@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<ITransientService, SomeService>();
+builder.Services.AddScoped<IScopedService, SomeService>();
 
 var app = builder.Build();
 
